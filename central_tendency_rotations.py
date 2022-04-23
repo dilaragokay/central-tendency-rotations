@@ -5,7 +5,9 @@ from util import hamilton_product, validate_input
 __version__ = "1.0"
 
 
-def mean(Q, weights):
+def mean(Q, weights=None):
+    if weights is None:
+        weights = torch.ones(len(Q)) / len(Q)
     validate_input(Q)
     A = torch.zeros((4, 4), device=torch.device("cuda:0"))
     weight_sum = torch.sum(weights)
