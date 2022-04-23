@@ -1,2 +1,2 @@
 # central-tendency-quaternions
-Computation of mean, median, and mode of a set of quaternions
+Computation of mean and median of a set of rotations (quaternions)

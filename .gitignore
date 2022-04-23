@@ -1,0 +1,10 @@
+# Python
+*.py[cod]
+__pycache__/
+*.egg-info
+
+# Venv
+.venv/
+
+# System
+.DS_Store
