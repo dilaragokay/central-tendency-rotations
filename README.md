@@ -1,4 +1,4 @@
-Computation of mean and median of a set of rotations (quaternions). These functions are PyTorch implementations of algorithms in http://tbirdal.blogspot.com/2019/10/i-allocate-this-post-to-providing.html.
+Computation of mean, median, and mode of a set of rotations (quaternions). Mean and median functions are PyTorch implementations of algorithms in http://tbirdal.blogspot.com/2019/10/i-allocate-this-post-to-providing.html.
 
 # References:
 * Markley, F. Landis, et al. "Averaging quaternions." Journal of Guidance, Control, and Dynamics 30.4 (2007): 1193-1197.

@@ -1,6 +1,6 @@
 import torch
 
-__version__ = "1.0"
+__version__ = "1.1"
 
 
 def hamilton_product(q1, q2):
@@ -84,3 +84,10 @@ def median(Q, p=1, max_angular_update=0.0001, max_iterations=1000):
             theta = 0
             i += 1
     return q_median
+
+
+def mode(Q, precision=1):
+    validate_input(Q)
+    rounded_quats = torch.round(Q, decimals=precision)
+    values, counts = torch.unique(rounded_quats, dim=0, return_counts=True)
+    return values[torch.argmax(counts)]
